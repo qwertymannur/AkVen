@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ak&Ven - HOME</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        a {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>    
+
+    <!-- Main Navigation Bar -->
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
+
+         <!-- Navigation Sidebar -->
+        <div class="sidebar-menu">
+            <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="men.html">MEN</a></li>
+                  <li><a href="women.html">WOMEN</a></li>
+                 <li><a href="kids.html">KIDS</a></li>
+                 <li><a href="aboutus.html">ABOUT US</a></li>
+                 <li><a href="sizes.html">INFORMATION ABOUT SIZES</a></li>
+            </ul>
+         </div>
+
+        <div class="navbar">
+            <div class="menu-icon">☰</div>
+            <div class="logo">AK&VEN SOCKS</div>
+            <div class="theme-icon">🌟</div>
+        </div>
+
+         <!-- Top Navigation -->
+        <nav class="section-navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+   
+    <!-- Main Section -->
+    <main id="main">
+        <section class="hero">
+            <img src="images/qazz.png" alt="Wreath" class="wreath">
+            <h1>NABIYA and AK&VEN</h1>
+            <h2>PRODUCTS</h2>
+            <p>
+                Every day, time goes on. Even though each day is not very special, 
+                we keep putting one foot in front of the other <strong>dreaming of our future</strong>
+                , grateful for the "present" of the present. Socks may not be very special 
+                to everyone, but Ak&Ven socks will always be with those people who 
+                keep going in their own special ways.
+            </p>
+        </section>
+    
+        <!-- For Orders Section -->
+        <section class="orders" id="orders">
+            <h2>FOR ORDERS</h2>
+            <div class="orders-container">
+                <!-- Video and Image -->
+                <div class="orders-info">
+                    <p>If you're interested in the production process and quality, watch our video:</p>
+                    <video class="orders-video" controls poster="images/1478601721_as.jpg">
+                        <source src="videos/factory.mp4" type="video/mp4">
+                         <track src="subtitles/factory.vtt" kind="subtitles" srclang="en" label="English">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="images/1478601721_as.jpg" alt="Production Process" class="orders-image">
+                </div>
+    
+                <!-- Order Form -->
+                <div class="order-form">
+                    <h3>Order Form</h3>
+                    <form action="mailto:nurmss04kg@gmail.com" method="post" enctype="text/plain">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" maxlength="20" required>
+                    
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" maxlength="20" required>
+                    
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" maxlength="25" required>
+                    
+                        <label for="address">Shipping Address:</label>
+                        <input type="text" id="address" name="address" maxlength="50" required>
+                    
+                        <label for="product">Product:</label>
+                        <input type="text" id="product" name="product" maxlength="100" required>
+                    
+                        <label for="requests">Special Requests:</label>
+                        <textarea id="requests" name="requests" maxlength="100"></textarea>
+                    
+                        <div class="delivery">
+                            <p>Is delivery needed?</p>
+                            <label>
+                                <input type="radio" name="delivery" value="yes" required>
+                                <span>Yes</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="delivery" value="no" required>
+                                <span>No</span>
+                            </label>
+                        </div>
+                        
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                        
+                        <div class="consent">
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                <span>I am agreeing to share my personal data</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="updates">
+                                <span>I want to receive new products by email</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit" class="submit-btn" title="Send the form data">SUBMIT</button>
+                            <button type="reset" class="reset-btn" title="Clear all fields">RESET</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Aside -->
+        <aside class="promo">
+            <h3>Special Offer!</h3>
+            <p>Get 10% off your first order when you sign up for our newsletter!</p>
+            <a href="https://instagram.com/ak&ven.socks" target="_blank">Follow us on Instagram</a>
+        </aside>
+    </main>
+
+    <footer class="footer-links">
+        <p>Connect with us:</p>
+        <a href="https://instagram.com/ak&ven.socks" target="_blank">Instagram</a> |
+        <a href="https://facebook.com/ak&ven.socks" target="_blank">Facebook</a> |
+        <a href="https://maps.app.goo.gl/GRbPjzAK6mjcgJy19" target="_blank">Google Maps</a>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="sidebar-overlay"></div>
+    <script src="index.js" defer></script>
+
+</body>
+</html>
+
